@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+OKO POLY APP
+</title>
+
+<style>
+body { background-image:url("cover1.png"); margin-left:0px; margin-top:10px; width:100%; background-repeat:repeat; font-family: Cambria ; font-weight:bold;}
+header { background-color:#003; color:#FFF; font-size:20px; opacity:0.9;  border-radius:25px; vertical-align:middle; text-align:left; }
+footer { background-color:#003; color:#FFF; text-align:center; font-size:20px; opacity:0.9;  border-radius:25px; margin-bottom:opx; }
+#box1 { background-color:#003; color:#FFF; font-size:20px; height:30px; opacity:0.9;  border-radius:25px; }
+#fullname { width:250px;  border-radius:25px;}
+#regno { width:60px;  border-radius:25px;}
+#gptable { width:250px; height:30px; background-color:#003; border-radius:25px; color:#FFF;}
+.info {  border-radius:25px; } 
+#drpbtn { width:25px; height:25px ;  margin-top:3px   }
+.dropbtn: hover , .dropbtn:focus { background-color:#FFF }
+#about {margin-left:0px; position:relative;   display:inline-block ; margin-top:3px;  width:35px;  }
+.dropdown-content { display:none ; position:absolute;   background-color:#003 ; min-width:160px ; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); }
+.dropdown-content a { color:#FFF; padding::12px 16px ; display:block; }
+.dropdown-content a:hover {background-color: #FFF; }
+.show { display:block; }
+</style>
+
+<script>
+function myFunction() {
+	var s = document.getElementById('department') ;
+	var department = s.options[s.selectedIndex].value;
+	var s = document.getElementById('level') ;
+	var level = s.options[s.selectedIndex].value; 
+	var s = document.getElementById('semester') ;
+	var semester = s.options[s.selectedIndex].value; 
+	
+	
+	
+	if ( department == 1 & level == 1 & semester == 1 ) 
+	{
+	 window.location.href='cte.html'
+	 }
+	else if ( department == 2 & level == 1 & semester == 1 ) 
+	{
+	 window.location.href='ee.html'
+	 }
+	 else if ( department == 3 & level == 1 & semester == 1 ) 
+	{
+	 window.location.href='arcnd11st.html'
+	 }
+	  else if ( department == 3 & level == 1 & semester == 2 ) 
+	{
+	 window.location.href='arcnd12nd.html'
+	 }
+	  else if ( department == 4 & level == 1 & semester == 1 ) 
+	{
+	 window.location.href='Mass.html'
+	 }
+	else alert (" This section is not supported with mygpcalculator yet download the latest version")
+    
+	localStorage.name = document.getElementById("fullname").value;
+	localStorage.reg = document.getElementById("regno").value;
+}
+	
+	function myDropdown()
+	{
+		document.getElementById("dropdowncontent").classList.toggle("show") ;
+	
+	
+	} 
+</script>
+</head>
+
+<header>
+<div class="dropdown" id="about"  align="center">
+<img src="about.png" onClick="myDropdown()" class="dropbtn" id="drpbtn" />
+ <div id="dropdowncontent" class="dropdown-content" >
+ <a href="about.html" class="dropdownoption">About </a> 
+ <a href="help.html" class="dropdownoption">Help</a>
+ </div>
+ </div>
+</header>
+ 
+
+<body>
+ <center>
+ <br><br>
+<p id="box1">  ENTER YOUR INFORMATION TO CONTINUE 
+</p>
+
+<hr>
+<p1> FULLNAME  </p1>
+<div>
+<input type="text" id="fullname"/>
+</div>
+<hr>
+
+<p3> LEVEL </p3>
+<div>
+<select id="level"  class="info" >
+<option value="1"> ND1 </option>
+<option value="2"> ND2 </option>
+<option value="3"> HND1 </option>
+<option value="4"> HND2 </option>
+</select>
+</div>
+<hr>
+
+<p3> SEMESTER </p3>
+<div>
+<select id="semester" class="info" >
+<option value="1"> FIRST</option>
+<option value="2"> SECOND</option>
+</select>
+</div>
+<hr>
+
+<p3> YEAR </p3>
+<div>
+<select id="year"  class="info">
+<option value="1"> 2015 </option>
+<option value="2"> 2016</option>
+<option value="3"> 2017 </option>
+</select>
+</div>
+<hr>
+
+
+<p3> DEPARTMENT </p3>
+<div>
+<select id="department" class="info" >
+<option value="1"> COMPUTER ENGINEERING </option>
+<option value="2"> ELECTRICAL ENGINEERING </option>
+<option value="3"> ARCHITECTURE</option>
+<option value="4"> MASS COMMUNICATION</option>
+</select>
+</div>
+<hr>
+
+<p1>  REG NO </p1>
+<div>
+<input type="text" id="regno"  />
+</div>
+<hr>
+
+<button id="gptable" onClick="myFunction()" > CONTINUE </button>
+<div id="now"></div>
+
+<br><br><br> 
+<footer>
+Fintech production
+</footer>
+
+</body>
+
+
+</html>
