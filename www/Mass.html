@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+OKO POLY APP
+</title>
+
+
+<style>
+body { background-image:url("cover1.png"); margin-left:0px; margin-top:0px; width:100%; background-repeat:repeat;  font-family: Cambria ; font-weight:bold;}
+header { background-color:#003; color:#FFF; text-align:center; font-size:26px; opacity:0.9; border-radius:25px; }
+footer { background-color:#003; color:#FFF; text-align:center; font-size:20px; opacity:0.9;  border-radius:25px; margin-bottom:opx; }
+#formtable {width:100%; background-color: #930; color:#FFF;  }
+#gptab {width:100%; text-align:center; background-color: #930; color:#FFF;}
+#ctegp{ width:250px; height:30px; background-color:#003; border-radius:25px; color:#FFF;}
+
+
+</style>
+
+<script>
+function calculategp() {
+	var s = document.getElementById('course1') ;
+	var course1 = s.options[s.selectedIndex].value;
+	var s = document.getElementById('course2') ;
+	var course2 = s.options[s.selectedIndex].value;
+	var s = document.getElementById('course3') ;
+	var course3 = s.options[s.selectedIndex].value;
+	var s = document.getElementById('course4') ;
+	var course4 = s.options[s.selectedIndex].value;
+	var s = document.getElementById('course5') ;
+	var course5 = s.options[s.selectedIndex].value;
+	var s = document.getElementById('course6') ;
+	var course6 = s.options[s.selectedIndex].value;
+	var s = document.getElementById('course7') ;
+	var course7 = s.options[s.selectedIndex].value;
+	var s = document.getElementById('course8') ;
+	var course8 = s.options[s.selectedIndex].value;
+	var s = document.getElementById('course9') ;
+	var course9 = s.options[s.selectedIndex].value;
+	var s = document.getElementById('course10') ;
+	var course10 = s.options[s.selectedIndex].value;
+
+if ( course1 == 1 ) { 
+	document.getElementById("gp1").innerHTML = "4" ,
+	document.getElementById("cu1").innerHTML = "2" }
+	else if ( course1 == 2 ) {
+	document.getElementById("gp1").innerHTML = "3.5" ,
+	document.getElementById("cu1").innerHTML = "2" }
+	else if ( course1 == 3 ) {
+	document.getElementById("gp1").innerHTML = "3.25" ,
+	document.getElementById("cu1").innerHTML = "2"}
+	else if ( course1 == 4 ) {
+	document.getElementById("gp1").innerHTML = "3",
+	document.getElementById("cu1").innerHTML = "2" }
+	else if ( course1 == 5 ) {
+	document.getElementById("gp1").innerHTML = "2.75",
+	document.getElementById("cu1").innerHTML = "2" }
+	else if ( course1 == 6 ) {
+	document.getElementById("gp1").innerHTML = "2.5",
+	document.getElementById("cu1").innerHTML = "2" }
+	else if ( course1 == 7 ) {
+	document.getElementById("gp1").innerHTML = "2.25" ,
+	document.getElementById("cu1").innerHTML = "2"}
+	else if ( course1 == 8 ) {
+	document.getElementById("gp1").innerHTML = "2",
+	document.getElementById("cu1").innerHTML = "2" }
+	else if ( course1 == 9 ) {
+	document.getElementById("gp1").innerHTML = "0",
+	document.getElementById("cu1").innerHTML = "2" }
+	else { 
+		document.getElementById("cu1").innerHTML = "0" ,
+		document.getElementById("gp1").innerHTML = "0" }
+
+if ( course2 == 1 ) {
+	document.getElementById("gp2").innerHTML = "4" ,
+	document.getElementById("cu2").innerHTML = "2"}
+	else if ( course2 == 2 ) {
+	document.getElementById("gp2").innerHTML = "3.5" ,
+	document.getElementById("cu2").innerHTML = "2"}
+	else if ( course2 == 3 ) {
+	document.getElementById("gp2").innerHTML = "3.25" ,
+	document.getElementById("cu2").innerHTML = "2"}
+	else if ( course2 == 4 ) {
+	document.getElementById("gp2").innerHTML = "3" ,
+	document.getElementById("cu2").innerHTML = "2"}
+	else if ( course2 == 5 ) {
+	document.getElementById("gp2").innerHTML = "2.75" ,
+	document.getElementById("cu2").innerHTML = "2"}
+	else if ( course2 == 6 ) {
+	document.getElementById("gp2").innerHTML = "2.5" ,
+	document.getElementById("cu2").innerHTML = "2"}
+	else if ( course2 == 7 ) {
+	document.getElementById("gp2").innerHTML = "2.25" ,
+	document.getElementById("cu2").innerHTML = "2"}
+	else if ( course2 == 8 ) {
+	document.getElementById("gp2").innerHTML = "2" ,
+	document.getElementById("cu2").innerHTML = "2"}
+	else if ( course2 == 9 ) {
+	document.getElementById("gp2").innerHTML = "0" ,
+	document.getElementById("cu2").innerHTML = "2"}
+	else {
+		document.getElementById("cu2").innerHTML = "0" ,
+		document.getElementById("gp2").innerHTML = "0" }
+		
+		if ( course3 == 1 ) {
+	document.getElementById("gp3").innerHTML = "4"  ,
+	document.getElementById("cu3").innerHTML = "2"}
+	else if ( course3 == 2 ) {
+	document.getElementById("gp3").innerHTML = "3.5"  ,
+	document.getElementById("cu3").innerHTML = "2"}
+	else if ( course3 == 3 ) {
+	document.getElementById("gp3").innerHTML = "3.25"  ,
+	document.getElementById("cu3").innerHTML = "2"}
+	else if ( course3 == 4 ) {
+	document.getElementById("gp3").innerHTML = "3"  ,
+	document.getElementById("cu3").innerHTML = "2"}
+	else if ( course3 == 5 ) {
+	document.getElementById("gp3").innerHTML = "2.75"  ,
+	document.getElementById("cu3").innerHTML = "2"}
+	else if ( course3 == 6 ) {
+	document.getElementById("gp3").innerHTML = "2.5"  ,
+	document.getElementById("cu3").innerHTML = "2"}
+	else if ( course3 == 7 ) {
+	document.getElementById("gp3").innerHTML = "2.25"  ,
+	document.getElementById("cu3").innerHTML = "2"}
+	else if ( course3 == 8 ) {
+	document.getElementById("gp3").innerHTML = "2"  ,
+	document.getElementById("cu3").innerHTML = "2"}
+	else if ( course3 == 9 ) {
+	document.getElementById("gp3").innerHTML = "0"  ,
+	document.getElementById("cu3").innerHTML = "2"}
+	else {
+		document.getElementById("cu3").innerHTML = "0" ,
+		document.getElementById("gp3").innerHTML = "0" }
+		
+		if ( course4 == 1 ) {
+	document.getElementById("gp4").innerHTML = "4" ,
+	document.getElementById("cu4").innerHTML = "2"  }
+	else if ( course4 == 2 ) {
+	document.getElementById("gp4").innerHTML = "3.5"  ,
+	document.getElementById("cu4").innerHTML = "2" }
+	else if ( course4 == 3 ) {
+	document.getElementById("gp4").innerHTML = "3.25"  ,
+	document.getElementById("cu4").innerHTML = "2" }
+	else if ( course4 == 4 ) {
+	document.getElementById("gp4").innerHTML = "3"  ,
+	document.getElementById("cu4").innerHTML = "2" }
+	else if ( course4 == 5 ) {
+	document.getElementById("gp4").innerHTML = "2.75"  ,
+	document.getElementById("cu4").innerHTML = "2" }
+	else if ( course4 == 6 ) {
+	document.getElementById("gp4").innerHTML = "2.5"  ,
+	document.getElementById("cu4").innerHTML = "2" }
+	else if ( course4 == 7 ) {
+	document.getElementById("gp4").innerHTML = "2.25"  ,
+	document.getElementById("cu4").innerHTML = "2" }
+	else if ( course4 == 8 ) {
+	document.getElementById("gp4").innerHTML = "2"  ,
+	document.getElementById("cu4").innerHTML = "2" }
+	else if ( course4 == 9 ) {
+	document.getElementById("gp4").innerHTML = "0"  ,
+	document.getElementById("cu4").innerHTML = "2" }
+	else {
+		document.getElementById("cu4").innerHTML = "0" ,
+		document.getElementById("gp4").innerHTML = "0" }
+		
+		if ( course5 == 1 ) {
+	document.getElementById("gp5").innerHTML = "4" ,
+	document.getElementById("cu5").innerHTML = "2"  }
+	else if ( course5 == 2 ) {
+	document.getElementById("gp5").innerHTML = "3.5" ,
+	document.getElementById("cu5").innerHTML = "2" }
+	else if ( course5 == 3 ) {
+	document.getElementById("gp5").innerHTML = "3.25" ,
+	document.getElementById("cu5").innerHTML = "2" }
+	else if ( course5 == 4 ) {
+	document.getElementById("gp5").innerHTML = "3" ,
+	document.getElementById("cu5").innerHTML = "2"}
+	else if ( course5 == 5 ) {
+	document.getElementById("gp5").innerHTML = "2.75" ,
+	document.getElementById("cu5").innerHTML = "2" }
+	else if ( course5 == 6 ) {
+	document.getElementById("gp5").innerHTML = "2.5" ,
+	document.getElementById("cu5").innerHTML = "2" }
+	else if ( course5 == 7 ) {
+	document.getElementById("gp5").innerHTML = "2.25" ,
+	document.getElementById("cu5").innerHTML = "2" }
+	else if ( course5 == 8 ) {
+	document.getElementById("gp5").innerHTML = "2" ,
+	document.getElementById("cu5").innerHTML = "2" }
+	else if ( course5 == 9 ) {
+	document.getElementById("gp5").innerHTML = "0" ,
+	document.getElementById("cu5").innerHTML = "2" }
+	else {
+		document.getElementById("cu5").innerHTML = "0" ,
+		document.getElementById("gp5").innerHTML = "0" }
+		
+		if ( course6 == 1 ) {
+	document.getElementById("gp6").innerHTML = "4" ,
+	document.getElementById("cu6").innerHTML = "3" }
+	else if ( course6 == 2 ) {
+	document.getElementById("gp6").innerHTML = "3.5",
+	document.getElementById("cu6").innerHTML = "3" }
+	else if ( course6 == 3 ) {
+	document.getElementById("gp6").innerHTML = "3.25" ,
+	document.getElementById("cu6").innerHTML = "3" }
+	else if ( course6 == 4 ) {
+	document.getElementById("gp6").innerHTML = "3",
+	document.getElementById("cu6").innerHTML = "3" }
+	else if ( course6 == 5 ) {
+	document.getElementById("gp6").innerHTML = "2.75",
+	document.getElementById("cu6").innerHTML = "3" }
+	else if ( course6 == 6 ) {
+	document.getElementById("gp6").innerHTML = "2.5",
+	document.getElementById("cu6").innerHTML = "3" }
+	else if ( course6 == 7 ) {
+	document.getElementById("gp6").innerHTML = "2.25",
+	document.getElementById("cu6").innerHTML = "3" }
+	else if ( course6 == 8 ) {
+	document.getElementById("gp6").innerHTML = "2",
+	document.getElementById("cu6").innerHTML = "3" }
+	else if ( course6 == 9 ) {
+	document.getElementById("gp6").innerHTML = "0",
+	document.getElementById("cu6").innerHTML = "3" }
+	else {
+		document.getElementById("cu6").innerHTML = "0" ,
+		document.getElementById("gp6").innerHTML = "0" }
+		
+		if ( course7 == 1 ) {
+	document.getElementById("gp7").innerHTML = "4" ,
+	document.getElementById("cu7").innerHTML = "3"}
+	else if ( course7 == 2 ) {
+	document.getElementById("gp7").innerHTML = "3.5",
+	document.getElementById("cu7").innerHTML = "3"}
+	else if ( course7 == 3 ) {
+	document.getElementById("gp7").innerHTML = "3.25",
+	document.getElementById("cu7").innerHTML = "3"}
+	else if ( course7 == 4 ) {
+	document.getElementById("gp7").innerHTML = "3",
+	document.getElementById("cu7").innerHTML = "3"}
+	else if ( course7 == 5 ) {
+	document.getElementById("gp7").innerHTML = "2.75",
+	document.getElementById("cu7").innerHTML = "3"}
+	else if ( course7 == 6 ) {
+	document.getElementById("gp7").innerHTML = "2.5",
+	document.getElementById("cu7").innerHTML = "3"}
+	else if ( course7 == 7 ) {
+	document.getElementById("gp7").innerHTML = "2.25",
+	document.getElementById("cu7").innerHTML = "3"}
+	else if ( course7 == 8 ) {
+	document.getElementById("gp7").innerHTML = "2",
+	document.getElementById("cu7").innerHTML = "3"}
+	else if ( course7 == 9 ) {
+	document.getElementById("gp7").innerHTML = "0",
+	document.getElementById("cu7").innerHTML = "3"}
+	else {
+		document.getElementById("cu7").innerHTML = "0" ,
+		document.getElementById("gp7").innerHTML = "0" }
+		
+		if ( course8 == 1 ) {
+	document.getElementById("gp8").innerHTML = "4",
+	document.getElementById("cu8").innerHTML = "2" }
+	else if ( course8 == 2 ) {
+	document.getElementById("gp8").innerHTML = "3.5" ,
+	document.getElementById("cu8").innerHTML = "2"}
+	else if ( course8 == 3 ) {
+	document.getElementById("gp8").innerHTML = "3.25" ,
+	document.getElementById("cu8").innerHTML = "2"}
+	else if ( course8 == 4 ) {
+	document.getElementById("gp8").innerHTML = "3" ,
+	document.getElementById("cu8").innerHTML = "2"}
+	else if ( course8 == 5 ) {
+	document.getElementById("gp8").innerHTML = "2.75" ,
+	document.getElementById("cu8").innerHTML = "2"}
+	else if ( course8 == 6 ) {
+	document.getElementById("gp8").innerHTML = "2.5" ,
+	document.getElementById("cu8").innerHTML = "2"}
+	else if ( course8 == 7 ) {
+	document.getElementById("gp8").innerHTML = "2.25" ,
+	document.getElementById("cu8").innerHTML = "2"}
+	else if ( course8 == 8 ) {
+	document.getElementById("gp8").innerHTML = "2" ,
+	document.getElementById("cu8").innerHTML = "2"}
+	else if ( course8 == 9 ) {
+	document.getElementById("gp8").innerHTML = "0" ,
+	document.getElementById("cu8").innerHTML = "2"}
+	else {
+		document.getElementById("cu8").innerHTML = "0" ,
+		document.getElementById("gp8").innerHTML = "0" }
+		
+if ( course9 == 1 ) {
+	document.getElementById("gp9").innerHTML = "4" ,
+	document.getElementById("cu9").innerHTML = "2" }
+	else if ( course9 == 2 ) {
+	document.getElementById("gp9").innerHTML = "3.5" ,
+	document.getElementById("cu9").innerHTML = "2"}
+	else if ( course9 == 3 ) {
+	document.getElementById("gp9").innerHTML = "3.25" ,
+	document.getElementById("cu9").innerHTML = "2"}
+	else if ( course9 == 4 ) {
+	document.getElementById("gp9").innerHTML = "3" ,
+	document.getElementById("cu9").innerHTML = "2"}
+	else if ( course9 == 5 ) {
+	document.getElementById("gp9").innerHTML = "2.75" ,
+	document.getElementById("cu9").innerHTML = "2"}
+	else if ( course9 == 6 ) {
+	document.getElementById("gp9").innerHTML = "2.5" ,
+	document.getElementById("cu9").innerHTML = "2"}
+	else if ( course9 == 7 ) {
+	document.getElementById("gp9").innerHTML = "2.25" ,
+	document.getElementById("cu9").innerHTML = "2"}
+	else if ( course9 == 8 ) {
+	document.getElementById("gp9").innerHTML = "2" ,
+	document.getElementById("cu9").innerHTML = "2"}
+	else if ( course9 == 9 ) {
+	document.getElementById("gp9").innerHTML = "0" ,
+	document.getElementById("cu9").innerHTML = "2"}
+	else {
+		document.getElementById("cu9").innerHTML = "0" ,
+		document.getElementById("gp9").innerHTML = "0" }
+		
+if ( course10 == 1 ) {
+	document.getElementById("gp10").innerHTML = "4",
+	document.getElementById("cu10").innerHTML = "2" }
+	else if ( course10 == 2 ) {
+	document.getElementById("gp10").innerHTML = "3.5" ,
+	document.getElementById("cu10").innerHTML = "2"}
+	else if ( course10 == 3 ) {
+	document.getElementById("gp10").innerHTML = "3.25" ,
+	document.getElementById("cu10").innerHTML = "2"}
+	else if ( course10 == 4 ) {
+	document.getElementById("gp10").innerHTML = "3" ,
+	document.getElementById("cu10").innerHTML = "2"}
+	else if ( course10 == 5 ) {
+	document.getElementById("gp10").innerHTML = "2.75" ,
+	document.getElementById("cu10").innerHTML = "2"}
+	else if ( course10 == 6 ) {
+	document.getElementById("gp10").innerHTML = "2.5" ,
+	document.getElementById("cu10").innerHTML = "2"}
+	else if ( course10 == 7 ) {
+	document.getElementById("gp10").innerHTML = "2.25" ,
+	document.getElementById("cu10").innerHTML = "2"}
+	else if ( course10 == 8 ) {
+	document.getElementById("gp10").innerHTML = "2" ,
+	document.getElementById("cu10").innerHTML = "2"}
+	else if ( course10 == 9 ) {
+	document.getElementById("gp10").innerHTML = "0" ,
+	document.getElementById("cu10").innerHTML = "2"}
+	else {
+		document.getElementById("cu10").innerHTML = "0" ,
+		document.getElementById("gp10").innerHTML = "0" }
+		
+
+		
+
+var a = document.getElementById("cu1").innerHTML ;
+var b = document.getElementById("cu2").innerHTML ;
+var c = document.getElementById("cu3").innerHTML ;
+var d = document.getElementById("cu4").innerHTML ;
+var e = document.getElementById("cu5").innerHTML ;
+var f = document.getElementById("cu6").innerHTML ;
+var g = document.getElementById("cu7").innerHTML ;
+var h = document.getElementById("cu8").innerHTML ;
+var i = document.getElementById("cu9").innerHTML ;
+var j = document.getElementById("cu10").innerHTML ;
+
+
+document.getElementById("mygp").innerHTML = (document.getElementById("gp1").innerHTML * document.getElementById("cu1").innerHTML + document.getElementById("gp2").innerHTML * document.getElementById("cu2").innerHTML
++ document.getElementById("gp3").innerHTML * document.getElementById("cu3").innerHTML + document.getElementById("gp4").innerHTML * document.getElementById("cu4").innerHTML + document.getElementById("gp5").innerHTML * document.getElementById("cu5").innerHTML
++ document.getElementById("gp6").innerHTML * document.getElementById("cu6").innerHTML + document.getElementById("gp7").innerHTML * document.getElementById("cu7").innerHTML + document.getElementById("gp8").innerHTML * document.getElementById("cu8").innerHTML
++ document.getElementById("gp9").innerHTML * document.getElementById("cu9").innerHTML + document.getElementById("gp10").innerHTML * document.getElementById("cu10").innerHTML ) / (a * 1 + b * 1 + c * 1 + d * 1 + e * 1 + f * 1 + g * 1 + h * 1 + i *1 + j * 1   ) ;
+
+
+
+var level = document.getElementById("mygp").innerHTML;
+if ( level >= 3.5 )
+{ document.getElementById("mylevel").innerHTML = "DISTINCTION"}
+else if ( level >= 3 & level < 3.5)
+{ document.getElementById("mylevel").innerHTML = "UPPERCREDIT"}
+else if ( level >= 2.5 & level < 3)
+{ document.getElementById("mylevel").innerHTML = "LOWER CREDIT"}
+else if ( level >= 2.0 & level <=2.5)
+{ document.getElementById("mylevel").innerHTML = "PASS"}
+else if ( level >= 0 & level <= 2)
+{ document.getElementById("mylevel").innerHTML = "FAIL"}
+else {document.getElementById("mylevel").innerHTML = "" }
+
+alert( "YOUR GP IS " + document.getElementById("mygp").innerHTML ) ;
+
+
+}
+
+function display()
+{
+document.getElementById("username").innerHTML = localStorage.name;
+document.getElementById("regno").innerHTML = localStorage.reg;
+}
+window.onload =display; 
+
+</script>
+
+
+
+</head>
+
+<header>
+GP CALCULATOR
+</header>
+<body>
+<center>
+<hr>
+<table border="1" onload="display()" id="formtable" align="center"> 
+<tr>
+<td> NAME:<b  id="username"> </b> </td>
+</tr>
+<tr>
+<td>REG NO: FPO/ND/MAC/015/<b id="regno"> </b> </td>
+</tr>
+<tr>
+<td>DEPARTMENT: MASS COMMUNICATION </td>
+</tr>
+<tr>
+<td> YOUR GP : <b id="mygp"></b> </td>
+</tr>
+<tr>
+<td> <b id="mylevel"></b> </td>
+</tr>
+</table>
+<hr>
+
+<table border="1"  id="gptab"> 
+<tr> 
+<td> COURSE CODE </td> 
+<td> GRADE </td>
+<td> GRADE POINT </td>
+<td> CREDIT UNIT</td> 
+</tr> 
+<tr> 
+<td>GNS 101 </td> 
+<td > 
+<select id="course1" class="gradeoption">
+<option value="0">  </option>
+<option value="1"> A </option>
+<option value="2"> AB </option>
+<option value="3"> B </option>
+<option value="4"> BC </option>
+<option value="5"> C </option>
+<option value="6"> CD </option>
+<option value="7"> D </option>
+<option value="8"> P </option>
+<option value="9"> F </option>
+</select>
+</td> 
+<td> <b id="gp1"> </b> </td>
+<td> <b id="cu1"> 2 </b> </td>
+</tr> 
+<tr> 
+<td>GNS 127 </td> 
+<td > 
+<select id="course2" class="gradeoption">
+<option value="0">  </option>
+<option value="1"> A </option>
+<option value="2"> AB </option>
+<option value="3"> B </option>
+<option value="4"> BC </option>
+<option value="5"> C </option>
+<option value="6"> CD </option>
+<option value="7"> D </option>
+<option value="8"> P </option>
+<option value="9"> F </option>
+</select>
+</td> 
+<td><b id="gp2"> </b> </td>
+<td> <b id="cu2"> 2 </b> </td>
+</tr> 
+<tr> 
+<td> MAC 111 </td> 
+<td > 
+<select id="course3" class="gradeoption">
+<option value="0">  </option>
+<option value="1"> A </option>
+<option value="2"> AB </option>
+<option value="3"> B </option>
+<option value="4"> BC </option>
+<option value="5"> C </option>
+<option value="6"> CD </option>
+<option value="7"> D </option>
+<option value="8"> P </option>
+<option value="9"> F </option>
+</select>
+</td> 
+<td><b id="gp3"> </b> </td>
+<td> <b id="cu3">2 </b></td>
+</tr> 
+<tr> 
+<td> MAC 112</td> 
+<td > 
+<select id="course4" class="gradeoption">
+<option value="0">  </option>
+<option value="1"> A </option>
+<option value="2"> AB </option>
+<option value="3"> B </option>
+<option value="4"> BC </option>
+<option value="5"> C </option>
+<option value="6"> CD </option>
+<option value="7"> D </option>
+<option value="8"> P </option>
+<option value="9"> F </option>
+</select>
+</td> 
+<td><b id="gp4"> </b> </td>
+<td> <b id="cu4">2 </b></td>
+</tr> 
+<tr> 
+<td>MAC 113</td> 
+<td > 
+<select id="course5" class="gradeoption">
+<option value="0">  </option>
+<option value="1"> A </option>
+<option value="2"> AB </option>
+<option value="3"> B </option>
+<option value="4"> BC </option>
+<option value="5"> C </option>
+<option value="6"> CD </option>
+<option value="7"> D </option>
+<option value="8"> P </option>
+<option value="9"> F </option>
+</select>
+</td> 
+<td> <b id="gp5"> </b></td>
+<td> <b id="cu5">2 </b> </td>
+</tr> 
+<tr> 
+<td>MAC 114 </td> 
+<td > 
+<select id="course6" class="gradeoption">
+<option value="0">  </option>
+<option value="1"> A </option>
+<option value="2"> AB </option>
+<option value="3"> B </option>
+<option value="4"> BC </option>
+<option value="5"> C </option>
+<option value="6"> CD </option>
+<option value="7"> D </option>
+<option value="8"> P </option>
+<option value="9"> F </option>
+</select>
+</td> 
+<td> <b id="gp6"> </b></td>
+<td> <b id="cu6">3 </b></td>
+</tr> 
+<tr> 
+<td>MAC 115</td> 
+<td > 
+<select id="course7" class="gradeoption">
+<option value="0">  </option>
+<option value="1"> A </option>
+<option value="2"> AB </option>
+<option value="3"> B </option>
+<option value="4"> BC </option>
+<option value="5"> C </option>
+<option value="6"> CD </option>
+<option value="7"> D </option>
+<option value="8"> P </option>
+<option value="9"> F </option>
+</select>
+</td> 
+<td><b id="gp7"> </b> </td>
+<td> <b id="cu7"> 3 </b> </td>
+</tr> 
+<tr> 
+<td> MAC 116 </td> 
+<td > 
+<select id="course8" class="gradeoption">
+<option value="0">  </option>
+<option value="1"> A </option>
+<option value="2"> AB </option>
+<option value="3"> B </option>
+<option value="4"> BC </option>
+<option value="5"> C </option>
+<option value="6"> CD </option>
+<option value="7"> D </option>
+<option value="8"> P </option>
+<option value="9"> F </option>
+</select>
+</td> 
+<td><b id="gp8"> </b> </td>
+<td> <b id="cu8">2 </b> </td>
+</tr> 
+<tr> 
+<td> MAC 117</td> 
+<td > 
+<select id="course9" class="gradeoption">
+<option value="0">  </option>
+<option value="1"> A </option>
+<option value="2"> AB </option>
+<option value="3"> B </option>
+<option value="4"> BC </option>
+<option value="5"> C </option>
+<option value="6"> CD </option>
+<option value="7"> D </option>
+<option value="8"> P </option>
+<option value="9"> F </option>
+</select>
+</td> 
+<td><b id="gp9"> </b> </td>
+<td> <b id="cu9">2 </b> </td>
+</tr> 
+<tr> 
+<td> MKT 111 </td> 
+<td > 
+<select id="course10" class="gradeoption">
+<option value="0">  </option>
+<option value="1"> A </option>
+<option value="2"> AB </option>
+<option value="3"> B </option>
+<option value="4"> BC </option>
+<option value="5"> C </option>
+<option value="6"> CD </option>
+<option value="7"> D </option>
+<option value="8"> P </option>
+<option value="9"> F </option>
+</select>
+</td> 
+<td><b id="gp10"> </b> </td>
+<td> <b id="cu10">2 </b> </td>
+</tr> 
+
+
+</table> 
+
+<button id="ctegp" onClick="calculategp()" > CALCULATE </button>
+
+<br><br><br> 
+<footer>
+Fintech production
+</footer>
+
+</body>
+
+
+</html>
+
